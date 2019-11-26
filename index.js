@@ -93,7 +93,7 @@ var data =  [
     }
 ]
 
-
+// 标记级别
 let level = data.length-1;
 
 let innHtml = addKids(data);
@@ -103,7 +103,7 @@ function addKids(data){
     
     // level ++;
     // console.log(addKids(data[0].kids));
-    for(var i = 0; i < data.length; i ++){
+    for(let i = 0; i < data.length; i ++){
 
         ul.setAttribute('number',i);
 
@@ -128,7 +128,7 @@ function addKids(data){
 
 document.body.append(innHtml);
 
-
+// 给所有文字导航绑定click事件
 let domP = document.getElementsByTagName('p');
 // console.log(domP[0])
 for(var i = 0;i < domP.length;i++){
